@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 함수 내 지역변수의 반환 (return 결과로 지역변수의 사용 가능?)
+	
+	/* function arr(){
+			var i = 1;
+			
+		for(i=1; i<=input; i++){
+				
+		var input = prompt("학생 " + i + " 입력");
+			}
+			
+			document.write(input + "<br>");
+	}
+/arr(); */
+
+	function arr(){
+		var stdnum = parseInt(prompt("이름을 입력할 학생 수는?"));
+		return stdnames;
+}
+
+	function arr_inputName(){
+			var stdnames = new Array(stdnum);
+			var stdname = arr();
+			
+			for(var i=0; i<stdnames.length; i++){
+					stdnames[i] = prompt((i+1) + " 번 학생의 이름은?");
+			}
+			return stdnames;
+	}
+	document.write("입력받은 학생의 이름은 : " , arr_inputName());
+</script>
+</head>
+<body>
+
+</body>
+</html>

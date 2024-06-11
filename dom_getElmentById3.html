@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{margin:0 auto; width:70%; text_align:center;}
+</style>	
+<script type="text/javascript">
+//정적태그가 준비되고 태그 참조변수를 사용해야 한다면
+//윈도우가 준비되면 바로 참조값 추출 변수 저장
+	window.onload = function(){
+		var imageA = document.getElmentById("imageA"); // img 태그 참조값 추출코드
+		var hint = document.getElmentById("hint"); // div 태그 참조값 추출코드
+		var changeButton = document.getElmentById("changeButton");
+	}
+	
+	//사용자가 버튼을 클릭하면 호출
+	function change(){
+		//아래 코드는 윈도우로드 된 후에 진행해야 되는 코드
+			/* var imageA = document.getElmentById("imageA"); // img 태그 참조값 추출코드
+			var hint = document.getElmentById("hint"); // div 태그 참조값 추출코드
+			var changeButton = document.getElmentById("changeButton"); */
+		
+			imageA.src="image/B.png";
+			hint.innerHTML = "새로운 이미지로 변경되었습니다";
+			hint.style.background="red"; // 참조객체의 css변경은 .style.css요소 = "변경값";
+			changeButton.innerHTML="완료";
+	}
+
+
+</script>
+</head>
+<body>
+<div>
+		<img id="imageA" src="image/A.png">
+		<div id="hint">[변경] 버튼을 누르면 이미지가 바뀝니다</div>
+		<button id="changeButton" onClick="change()">변경</button>
+	</div>
+
+</body>
+</html>

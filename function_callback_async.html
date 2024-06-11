@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//비동기적으로 콜백함수 호출
+	//호출된 순서와 동일하게 결과가 종료되는지
+	
+	function cb(){
+			console.log("콜백함수 호출됨");
+	}
+	
+	// 작업 나열
+	// 1.
+	console.log("콜백 함수 호출 전 호출된 함수");
+	// 2. 내장함수 setTimeout(함수명,시간)
+	// cb 함수를 setTimeout 함수 호출되고 3초후에 호출되도록
+	setTimeout(cb,3000);
+	// 3. 
+	console.log("콜백 함수 호출 후 호출된 함수");
+	
+	function callbackFunction() {
+	    console.log("콜백 함수가 호출되었습니다.");
+	}
+
+	function mainFunction(cb) {
+	    console.log("메인 함수가 실행되었습니다.");
+	    cb(); // 콜백 함수 호출
+	}
+
+	mainFunction(callbackFunction);
+
+	
+	function num1(a,b){
+			var a =1;
+			var b =2;
+			return a , b;
+	}
+	
+	function num2(c,d){
+			var c =3;
+			var c =4;
+			return c , d;
+	}
+	
+	function num3(num1 , num2){
+			alert(a+b+c+d);
+	}
+	
+	num3();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

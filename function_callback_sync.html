@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 동기적 콜백 함수 사용
+	// 익명함수 - 익명함수 변수명 = callback
+	var callback = function(){
+			console.log("콜백함수 호출됨")
+	};
+	
+	// 일반함수 : 매개변수 cb에는 함수 코드 전달되어야 함
+	
+	function show(cb){
+			cb(); // 전달된 함수코드 호출
+	}
+	
+	
+	//실행코드 나열 ---------------------------------
+	// 1.
+	console.log("콜백함수 호출전");
+	// 2.
+	show(callback); // callback 익명함수의 코드 전달 - callback 익명함수는 콜백함수가 됨
+	// 3.
+	console.log("콜백함수 호출후");
+	
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

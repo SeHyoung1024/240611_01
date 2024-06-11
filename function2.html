@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function changeColor(){
+			var color = prompt("색상 입력 : red/blue/green");
+			document.write(color + "로 배경색을 바꿉니다");
+			// document 는 브라우저의 body 부분
+			document.bgColor = color;
+	}
+	
+	var input = confirm("배경색을 바꾸시겠습니까??");
+	if (input==true){
+		changeColor();
+	}else{
+		alert("배경색을 바꾸지 않습니다");
+	}
+	
+	
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

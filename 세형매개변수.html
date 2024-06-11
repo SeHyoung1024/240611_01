@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	HtmlScript();
+
+	function HtmlScript(){ 		// 출력
+			document.write(input());
+	}
+	
+	function plus(num){				// 숫자 덧셈 , 스크립트로 반환
+	 	var numPlus = Number((num[0] + num[1] + num[2] + num[3] + num[4]));
+	 	return numPlus;
+}
+
+	function input(){			// 숫자 입력받음 , 맥스에 반환
+		var i = 0;
+		var num = new Array(5);
+			for(i=0; i<5; i++){
+					num[i] = parseInt(prompt("숫자 " + (i+1) + " 입력"));
+			}
+		return plus(num);
+	}
+
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

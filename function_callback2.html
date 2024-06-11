@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var call_test = function(){
+			alert("콜백함수로 전달됩니다");
+	}
+
+	function test_show(fnc){
+			alert("전달된 콜백 함수를 실행합니다");
+			fnc();
+	}
+	
+	test_show(call_test);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.write(input());
+	function input(){
+			var row = parseInt(prompt("테이블의 행 수 입력"));
+			var cal = parseInt(prompt("테이블의 열 수 입력"));
+			return makeTable (row , cal);
+	}
+	
+	function makeTable(row , cal){
+			document.write("<table border='1'");
+			
+			for (var i=1; i<=row; i++){
+					document.write("<tr>");
+				
+				for (var j=1; j<=cal; j++){
+					document.write("<td>★</td>");
+					document.write("</tr>");
+				}
+				
+			}
+			document.write("</table>");	
+	}		
+	
+			
+	
+	
+	
+</script>
+</head>
+<body>
+<button onClick="input()">테이블 만들기</button>
+</body>
+</html>

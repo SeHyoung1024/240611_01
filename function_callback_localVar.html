@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let globalVar = 100;
+	
+	function show(localVar){
+			console.log(`전역변수 : ${globalVar} / 지역변수 : ${localVar}`);
+	}
+
+	function call(callback){
+			let localVar = 1;
+			callback(localVar);
+	}
+	
+	call(show);
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

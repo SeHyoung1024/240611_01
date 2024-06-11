@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 3개의 값을 전달받아 연산을 진행 후 해당 연산 결과를 반환하는 함수
+	function calcAvg(sub1 , sub2 , sub3){ // 지역변수
+				return(sub1 + sub2 + sub3) / 3;
+	}// 매개변수가 있고 반환값이 있는 함수
+	
+	function input(){
+			return parseInt(prompt("점수 입력"));
+	}
+	
+	//clacAvg 함수 호출시 실제값을 전달 해야함
+	alert("점수의 평균은 : " + calcAvg(input(),input(),input()));
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

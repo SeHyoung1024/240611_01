@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//선택자로 선택되어지는 요소가 여러개인 경우 처음 한개 객체에 대해서만 참조값 반환하는 함수
+	window.onload = function(){
+		//문서 내 객체를 선택
+		var header = document.querySelector("h1"); // 태그 선택자
+		//문서 내 객체 조작 (속성 변경)
+		header.style.color = "orange";
+		header.style.background = "red";
+		header.innerHTML = "From JavaScript";
+}
+
+
+
+</script>
+</head>
+<body>
+	<h1>Header</h1>
+	<h1>Header</h1>
+	<h1>Header</h1>
+
+
+</body>
+</html>

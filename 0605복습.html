@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var img;
+	var btn;
+	
+	window.onload = function(){
+			img = document.createElement('img');
+			//태그 속성 변경
+			img.src = "image/A.png";
+			img.id = "dimg";
+			//동적 생성 객체를 img 부모 태그에 포함 - body 태그가 부모 태그
+			document.body.appendChild(img);
+			
+			btn = document.createElement('button');
+			btn.id = "dbtn";
+			/* 객체에 이벤트라는 특수 속성 연결 : button 태그 객체는 onClick이라는 이벤트
+			속성 대신에 onclick의 속성을 갖고 있음 
+			onclick 속성은 익명함수를 값으로 전달 받는 속성 
+			객체에 동적으로 클릭 이벤트 속성을 연결하려면 전달값은 함수 형식이여야 함 */
+			btn.onclick= function(){show()}
+			// button 내부에 설정할 텍스트 객체 생성 후 참조값 변수에 저장
+			// createTextNode("문자열")
+			b_text = document.createTextNode("이미지 변경");
+			btn.appendChild(b_text);
+			document.body.appendChild(btn);
+	}
+		function show(){
+				dimg = document.getElementById("dimg");
+				dimg.src = "image/B.png";
+				dbtn = docoment.getElementById("dbtn");
+				dbtn.innerHTML = "변경완료";
+		}
+</script>
+</head>
+<body>
+
+</body>
+</html>

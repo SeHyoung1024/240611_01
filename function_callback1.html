@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	 function callback(){
+			alert("익명 함수 입니다");
+	}
+	 
+	function show(callback){
+			callback();
+	}
+	
+	function show2(cb){
+			cb();
+	}
+	show(callback);
+
+	show2(callback);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

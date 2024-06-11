@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		//문서 내 객체를 선택후 참조값을 배열로 반환
+		var headers = document.querySelectorAll("h3,#h1id2, .h2class1"); //여러 선택자 적용
+		//문서 내 객체 조작 (속성 변경)
+		//배열 내 원소 순회하면서 속성 변경
+	
+		for(var i=0; i<headers.length; i++){
+				var header = headers[i];
+				header.style.color = "orange";
+				header.style.background = "red";
+				header.innerHTML = "From JavaScript";
+				header.style.width = "50%";
+		}
+	
+	}
+
+
+
+</script>
+</head>
+<body>
+<h1>Header</h1>
+<h1>Header</h1>
+<h1>Header</h1>
+<h1 id = "h1id">Header</h1>
+<h1 id = "h1id2">h1id2</h1>
+<h2 class = "h2class1">Header</h2>
+<h2 class = "h2class1">Header</h2>
+<h2 class = "h2class1">h2Class2</h2>
+<h2 class = "h2class1">h2Class2</h2>
+<h3>Header</h3>
+
+
+
+</body>
+</html>

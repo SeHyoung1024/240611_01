@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	button{
+		width:400px;
+		height:400px;
+	}
+</style>
+<script type="text/javascript">
+	// 함수 호출 방법 3. 태그의 이벤트 속성 값으로 함수 호출 코드 작성
+	// 함수 선언은 script태그 내 이거나 js 파일 에서 선언해야 함
+		function input(){
+			var color = prompt("색상 입력 : red/green/blue/yellow");
+			document.bgColor(color);
+	}
+	
+</script>
+</head>
+<body>
+	<!-- onClick : 버튼 태그의 클릭 이벤트 속성 -->
+	<!-- 이벤트 속성 값 "input()" = 스크립트 내의 함수 -->
+	<button onClick="input()"> 색상입력 </button>
+
+</body>
+</html>
